@@ -47,6 +47,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test, Project=roboshop
     alb.ingress.kubernetes.io/group.name: pjdevops
+    kubernetes.io/ingress.class: alb
 spec:
   rules:
   - host: "app2.pjdevops.online"
