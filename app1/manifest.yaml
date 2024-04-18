@@ -43,10 +43,10 @@ kind: Ingress
 metadata:
   name: app1
   annotations:
-  alb.ingress.kubernetes.io/scheme: internet-facing
-  alb.ingress.kubernetes.io/target-type: ip
-  alb.ingress.kubernetes.io/tags: Environment=dev,Team=test, Project=roboshop
-  alb.ingress.kubernetes.io/group.name: pjdevops
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/tags: Environment=dev,Team=test, Project=roboshop
+    alb.ingress.kubernetes.io/group.name: pjdevops
 spec:
   rules:
   - host: "app1.pjdevops.online"
